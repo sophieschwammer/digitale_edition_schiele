@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Personenverzeichnis des Editionskorpus</title>
+            <respStmt>
+               <resp>TEI-Kodierung</resp>
+               <name>Sophie Schwammer</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Projektarbeit Digitale Edition, Universität Wien, 2026</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Verzeichnis der im edierten Korpus erwähnten Personen.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <standOff>
+      <listPerson>
+         <person xml:id="pers0001" sex="M">
+            <idno type="GND">https://d-nb.info/gnd/118607499</idno>
+            <persName>
+               <surname>Schiele</surname>
+               <forename>Egon</forename>
+            </persName>
+            <birth when="1890-06-12">12. Juni 1890 <placeName>Tulln an der Donau</placeName>
+            </birth>
+            <death when="1918-10-31">31. Oktober 1918</death>
+            <occupation>Maler</occupation>
+            <occupation>Künstler</occupation>
+         </person>
+         <person xml:id="pers0002" sex="M">
+            <persName>
+               <surname>Kofron</surname>
+               <forename>Ferdinand</forename>
+            </persName>
+            <note>Adressat des Briefes; weitere biographische Angaben nicht ermittelt.</note>
+         </person>
+         <person xml:id="pers0003" sex="M">
+            <persName>Filetz</persName>
+            <note>Person im Brief erwähnt, keine eindeutige Identifizierung möglich.</note>
+         </person>
+         <person xml:id="pers0004" sex="M">
+            <persName>Höllriegl</persName>
+            <note>Person im Brief erwähnt; keine eindeutige Identifizierung möglich.</note>
+         </person>
+         <person xml:id="pers0005" sex="F">
+            <persName>unbekanntes Fräulein</persName>
+            <note>Von Egon Schiele im Brief erwähnt; Identität unbekannt.</note>
+         </person>
+         <person xml:id="pers0006" sex="F">
+            <persName>Frau von Ferdinand Kofron</persName>
+            <note>Name unbekannt</note>
+         </person>
+         <person xml:id="pers0007" sex="M">
+            <idno type="GND">https://d-nb.info/gnd/118993070</idno>
+            <persName>
+               <surname>Roessler</surname>
+               <forename>Arthur</forename>
+            </persName>
+            <birth when="1877-02-20">20. Februar 1877 <placeName ref="orte.xml#place0001">Wien</placeName>
+            </birth>
+            <death when="1955-07-20">20. Juli 1955</death>
+            <occupation>Schriftsteller</occupation>
+            <occupation>Kunsthistoriker</occupation>
+            <occupation>Historiker</occupation>
+         </person>
+         <person xml:id="pers0008" sex="M">
+            <idno type="GND">https://d-nb.info/gnd/1025055500</idno>
+            <persName>
+               <surname>Reichel</surname>
+               <forename>Oskar</forename>
+            </persName>
+            <birth when="1869-04-21">21. April 1869 <placeName ref="orte.xml#place0001">Wien</placeName>
+            </birth>
+            <death when="1943-05-07">7. Mai 1943</death>
+            <occupation>Arzt</occupation>
+            <occupation>Internist</occupation>
+            <occupation>Kunstsammler</occupation>
+         </person>
+         <person xml:id="pers0009" sex="M">
+            <idno type="GND">https://d-nb.info/gnd/11642785X</idno>
+            <persName>
+               <surname>Reininghaus</surname>
+               <forename>Carl</forename>
+            </persName>
+            <birth when="1857-02-11">11. Februar 1857 <placeName ref="orte.xml#place0003">Graz</placeName>
+            </birth>
+            <death when="1929-10-29">29. Oktober 1929</death>
+            <occupation>Großindustrieller</occupation>
+            <occupation>Kunstsammler</occupation>
+         </person>
+         <person xml:id="pers0010" sex="M">
+            <idno type="GND">https://d-nb.info/gnd/120739801</idno>
+            <persName>
+               <surname>Hauer</surname>
+               <forename>Franz</forename>
+            </persName>
+            <birth when="1867-05-19">19. Mai 1867 <placeName>Weißenkirchen in der Wachau</placeName>
+            </birth>
+            <death when="1914-06-05">5. Juni 1914</death>
+            <occupation>Gastwirt</occupation>
+            <occupation>Kunstsammler</occupation>
+         </person>
+         <person xml:id="pers0011" sex="M">
+            <idno type="GND">https://d-nb.info/gnd/118590502</idno>
+            <persName>
+               <surname>Osthaus</surname>
+               <forename>Karl Ernst</forename>
+            </persName>
+            <birth when="1874-04-15">15. April 1874 <placeName>Hagen</placeName>
+            </birth>
+            <death when="1921-03-27">27. März 1921</death>
+            <occupation>Kunsthistoriker</occupation>
+            <occupation>Kunstsammler</occupation>
+         </person>
+         <person xml:id="pers0012" sex="M">
+            <idno type="GND">https://d-nb.info/gnd/119525984</idno>
+            <persName>
+               <surname>Goltz</surname>
+               <forename>Hans</forename>
+            </persName>
+            <birth when="1873-08-11">11. August 1873 <placeName>Elbing</placeName>
+            </birth>
+            <death when="1927-10-21">21. Oktober 1927</death>
+            <occupation>Kunsthändler</occupation>
+            <occupation>Buchhändler</occupation>
+         </person>
+      </listPerson>
+   </standOff>
+</TEI>

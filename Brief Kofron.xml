@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Egon Schiele</persName>
+               <placeName>"unknown"</placeName>
+               <date when="1917-02-13"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Ferdinand Kofron</persName>
+               <placeName>"unknown"</placeName>
+               <date/>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <standOff>
+      <listPerson>
+         <person xml:id="pe0001">
+            <idno type="Wikidata">Q44032</idno>
+            <persName>
+               <forename>Egon</forename>
+               <surname>Schiele</surname>
+            </persName>
+         </person>
+         <person xml:id="pe0002">
+            <idno type="Wikidata">xxxx</idno>
+            <persName>
+               <forename>Ferdinand</forename>
+               <surname>Kofron</surname>
+            </persName>
+         </person>
+      </listPerson>
+      <listPlace>
+         <place xml:id="pl0001">
+            <placeName>Wien</placeName>
+            <idno type="Wikidata">Q1741</idno>
+         </place>
+         <place xml:id="pl0002">
+            <placeName>Mühling</placeName>
+            <idno type="Wikidata">Q113152000</idno>
+         </place>
+         <place xml:id="pl0003">
+            <placeName>Grazer Museum</placeName>
+            <idno type="Wikidata">xxx</idno>
+         </place>
+         <place xml:id="pl0004">
+            <placeName>Konsum-Anstalt</placeName>
+            <idno type="Wikidata">xxx</idno>
+         </place>
+         <place xml:id="pl0005">
+            <placeName>Zürich</placeName>
+            <idno type="Wikidata">Q72</idno>
+         </place>
+      </listPlace>
+   </standOff>
+   <text>
+      <body>
+         <div type="letterBody">
+            <opener>
+               <dateline>13. Februar 1917.</dateline>
+               <salute>Lieber Herr Kofron!</salute> -in<lb/>
+            </opener>
+            <p>
+               <pb/> einigen Tagen bin ich ein Monat in Wien. –<lb/> Wie geht es Ihnen und wird Ihre
+               Enthebung<lb/> gelingen? – ich wünscht [!] es Ihnen. – Was macht<lb/> Filetz, ich
+               laße ihn bestens grüßen, – auch die<lb/> übrigen in Mühling verbannten.<lb/> ich habe
+               an Wochentagen von 8–3 respekt.[ektive] 4h [Dienst]<lb/> dann Schluß, – Sonn u.
+               Feiertage frei. –<lb/> es geht mir wirklich sehr gut. – Ich arbeite für mich<lb/>
+               täglich und bekomme lauter neue Käufer. –<lb/> Es wird mit Hochdruck gearbeitet. –
+               Die Zeichnung<lb/> von Höllrigl hängt bereits im Grazer Museum.<lb/> – Hier in der
+               Konsum-Anstalt bekomme ich<lb/> Zigaretten, Fett, Zucker, Kaffee u.s.w. auch
+               trink<lb/> ich fleißig Probeschnäpse. – ich sitze mit einem<lb/> netten Fräulein
+               allein in einen [!] Zimmer, – Auweh!<lb/> sonst geht es hier ganz zivilistisch zu. –
+               Das böseste<lb/> wird jetzt die Straßenbahn werden, – kein<lb/> Verkehrsmittel für
+               Wien ist bedenklich. –<lb/> Wenn Sie nach Wien kommen besuchen Sie mich<lb/> einmal,
+               – schreiben Sie aber bitte vorerst<lb/> damit ich daheim bin. – Wie der Krieg
+               aus<lb/> ist, fahren wir nach Zürich.<lb/> Einstweilen freundliche Grüße und<lb/>
+               Empfehlungen an Ihre Frau<lb/>
+            </p>
+         </div>
+         <closer>
+            <salute>Auf Wiedersehn</salute>
+            <signed>EGON<lb/> SCHIELE<lb/> 1917</signed>
+         </closer>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Organisationsverzeichnis des Editionskorpus</title>
+            <respStmt>
+               <resp>TEI-Kodierung</resp>
+               <name>Sophie Schwammer</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Projektarbeit Digitale Edition, Universität Wien, 2026</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Verzeichnis der im edierten Korpus erwähnten Organisationen.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <standOff>
+      <listOrg>
+         <org xml:id="org0001">
+            <orgName>Grazer Museum</orgName>
+            <settlement ref="orte.xmlhttps://github.com/sophieschwammer/digitale_edition_schiele.git#place0003">Graz</settlement>
+            <note>Im Brief erwähntes Museum in Graz; genaue Identifizierung unklar. Vermutlich das
+               Universalmuseum Joanneum.</note>
+         </org>
+         <org xml:id="org0002">
+            <orgName>Konsum-Anstalt</orgName>
+            <note>Identifizierung unklar.</note>
+         </org>
+         <org xml:id="org0003">
+            <orgName>Emil Scholz Speditions Bureau</orgName>
+            <settlement ref="orte.xml#place0001">Wien</settlement>
+            <note>Spediteur des Wiener Künstlerbundes Hagen. Predigergasse 5, 1010 Wien.</note>
+         </org>
+         <org xml:id="org0004">
+            <orgName>Wiener Secession</orgName>
+            <settlement ref="orte.xml#place0001">Wien</settlement>
+            <note>Gemeint ist die XLIII. Ausstellung der Vereinigung bildender Künstler Österreichs
+               Secession, Wien, 22.01.–26.02.1913.</note>
+         </org>
+         <org xml:id="org0005">
+            <orgName>Neue Freie Presse</orgName>
+            <settlement ref="orte.xml#place0001">Wien</settlement>
+            <note>Wiener Tageszeitung, erschienen 1864–1939.</note>
+         </org>
+         <org xml:id="org0006">
+            <orgName>Internationales Speditions-Bureau Guido Hartmann</orgName>
+            <settlement ref="orte.xml#place0001">Wien</settlement>
+            <note>Möbel- und Aufbewahrungsanstalt, Billrothstraße 4, 1190 Wien.</note>
+         </org>
+      </listOrg>
+   </standOff>
+</TEI>

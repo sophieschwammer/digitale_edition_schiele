@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Ortsverzeichnis des Editionskorpus</title>
+            <respStmt>
+               <resp>TEI-Kodierung</resp>
+               <name>Sophie Schwammer</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Projektarbeit Digitale Edition, Universität Wien, 2026</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Verzeichnis der im edierten Korpus erwähnten Orte.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <standOff>
+      <listPlace>
+         <place xml:id="place0001">
+            <placeName>Wien</placeName>
+            <country>Österreich</country>
+            <location>
+               <geo>48.2082 16.3738</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/4066009-6</idno>
+         </place>
+         <place xml:id="place0002">
+            <placeName>Mühling</placeName>
+            <country>Österreich</country>
+            <location>
+               <geo>48.1044 15.1338</geo>
+            </location>
+         </place>
+         <place xml:id="place0003">
+            <placeName>Graz</placeName>
+            <country>Österreich</country>
+            <location>
+               <geo>47.0667 15.4333</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/4021912-4</idno>
+         </place>
+         <place xml:id="place0004">
+            <placeName>Zürich</placeName>
+            <country>Schweiz</country>
+            <location>
+               <geo>47.3717 8.5422</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/4068038-1</idno>
+         </place>
+         <place xml:id="place0005">
+            <placeName>München</placeName>
+            <country>Deutschland</country>
+            <location>
+               <geo>48.1397 11.5744</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/4127793-4</idno>
+         </place>
+         <place xml:id="place0006">
+            <placeName>Krumau</placeName>
+            <placeName xml:lang="cs">Český Krumlov</placeName>
+            <country>Tschechien</country>
+            <location>
+               <geo>48.8102 14.3147</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/1076138969</idno>
+         </place>
+         <place xml:id="place0007">
+            <placeName>Győr</placeName>
+            <country>Ungarn</country>
+            <location>
+               <geo>47.6833 17.6333</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/4103504-5</idno>
+         </place>
+      </listPlace>
+   </standOff>
+</TEI>
