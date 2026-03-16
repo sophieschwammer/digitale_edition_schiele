@@ -24,7 +24,9 @@
       <listOrg>
          <org xml:id="org0001">
             <orgName>Grazer Museum</orgName>
-            <settlement ref="orte.xmlhttps://github.com/sophieschwammer/digitale_edition_schiele.git#place0003">Graz</settlement>
+            <settlement
+               ref="orte.xmlhttps://github.com/sophieschwammer/digitale_edition_schiele.git#place0003"
+               >Graz</settlement>
             <note>Im Brief erwähntes Museum in Graz; genaue Identifizierung unklar. Vermutlich das
                Universalmuseum Joanneum.</note>
          </org>

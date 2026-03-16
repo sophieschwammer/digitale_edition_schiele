@@ -3,7 +3,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Title</title>
@@ -15,8 +15,22 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-  </teiHeader>
-  <text>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName>Egon Schiele</persName>
+               <placeName>"unknown"</placeName>
+               <date when="1917-10-04"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName>Arthur Roessler</persName>
+               <placeName>"unknown"</placeName>
+               <date/>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
       <body>
          <div type="letterBody">
             <opener>
@@ -24,27 +38,19 @@
                <salute>Lieber A.R.</salute> -in<lb/>
             </opener>
             <p>
-               <pb/> ich habe Ihren Brief vom 28. v. M. [vorigen Monats] erhalten, ebenso<lb/>
-               die 4 Fotos, das Bild und die primitive Plastik<lb/>
-               bis jetzt noch nicht hingegen die Uhr welche in<lb/>
-               Reparatur ist habe ich.<lb/>
-               Den singenden Engel möchte ich sehr gerne<lb/>
-               haben, Sie erwähnten K[ronen] 600- für mich, wenn<lb/>
-               Sie 12 farbige Zeichnungen wollen?<lb/>
-               Sehr gerne möchte ich eine schöne, alte, eingelegte<lb/>
-               Kredenz, – ich sah vor [ein] paar Tagen in München<lb/>
-               sehr sehr schöne Stücke. Dafür wäre ich gerne bereit<lb/>
-               ein größeres [Einfügung, s. u.: +] neues Bild mit Ihnen zu tauschen<lb/>
-               und würde Ihnen, genau so wie bei den Zeichnun-<lb/>
-               gen die Hälfte dafür rechnen, u. zw. [und zwar] habe ich die<lb/>
-               Landschaften mit K 2000-, die Porträts mit K 3000-<lb/>
-               und die anderen größeren Bilder mit mehr ange-<lb/>
-               schrieben und es würde dann die Hälfte sein. –<lb/>
-               Allerdings geht dies nicht von heute auf morgen<lb/>
-               und ich meine nur gelegentlich, und ein ausge-<lb/>
-               zeichnetes Stück. Vorderhand erwarte ich betreffs<lb/>
-               des Engels Ihre Antwort.
-               <lb/>
+               <pb/> ich habe Ihren Brief vom 28. v. M. [vorigen Monats] erhalten, ebenso<lb/> die 4
+               Fotos, das Bild und die primitive Plastik<lb/> bis jetzt noch nicht hingegen die Uhr
+               welche in<lb/> Reparatur ist habe ich.<lb/> Den singenden Engel möchte ich sehr
+               gerne<lb/> haben, Sie erwähnten K[ronen] 600- für mich, wenn<lb/> Sie 12 farbige
+               Zeichnungen wollen?<lb/> Sehr gerne möchte ich eine schöne, alte, eingelegte<lb/>
+               Kredenz, – ich sah vor [ein] paar Tagen in München<lb/> sehr sehr schöne Stücke.
+               Dafür wäre ich gerne bereit<lb/> ein größeres [Einfügung, s. u.: +] neues Bild mit
+               Ihnen zu tauschen<lb/> und würde Ihnen, genau so wie bei den Zeichnun-<lb/> gen die
+               Hälfte dafür rechnen, u. zw. [und zwar] habe ich die<lb/> Landschaften mit K 2000-,
+               die Porträts mit K 3000-<lb/> und die anderen größeren Bilder mit mehr ange-<lb/>
+               schrieben und es würde dann die Hälfte sein. –<lb/> Allerdings geht dies nicht von
+               heute auf morgen<lb/> und ich meine nur gelegentlich, und ein ausge-<lb/> zeichnetes
+               Stück. Vorderhand erwarte ich betreffs<lb/> des Engels Ihre Antwort. <lb/>
             </p>
          </div>
          <closer>
@@ -52,5 +58,5 @@
             <signed>EGON<lb/> SCHIELE<lb/> 1917</signed>
          </closer>
       </body>
-  </text>
+   </text>
 </TEI>
