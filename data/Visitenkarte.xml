@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="1"/>
+         <div type="Visitenkarte">
+            <opener>
+               <salute>Lieber Herr <persName ref="personen.xml#pers0007">Rößler</persName>!</salute>
+               /ich komme<lb/>
+            </opener>
+            <p> heute abends um ½ 7h zu Ihnen. <lb/>3 Holzschnitte gaben Sie mir; <lb/>ich habe aber
+               den Karton worauf <lb/>diese kleben knapp abgeschnitten, <lb/>weil ich sie rahmen
+               wollte; einer <lb/>von ihnen war größer, der ist <lb/>etwas abgeschnitten. Geben Sie
+                  <pb n="2"/>
+               <lb/>dem Überbringer die Figur mit! </p>
+               <closer>
+                  <salute>Beste Grüße!</salute>
+                  <signed>EGON SCHIELE</signed>
+               </closer>
+               
+         </div>
+      </body>
+   </text>
+</TEI>
