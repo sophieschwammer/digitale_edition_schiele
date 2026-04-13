@@ -27,12 +27,13 @@ body {
 
 .text {
    font-size: 18px;
-   margin-left: 0px;
-   
+   margin-left: 30px;
+
 }
 
 .menu a {
-    margin: 0px;
+    margin: 20px;
+    line-height: 50px;
     padding: 50px;
     text-decoration: none;
     font-size: 20px;
