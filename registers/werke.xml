@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/transform.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Werksverzeichnis des Editionskorpus</title>
+            <respStmt>
+               <resp>TEI-Kodierung</resp>
+               <name>Sophie Schwammer</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Projektarbeit Digitale Edition, Universität Wien, 2026</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Verzeichnis der im edierten Korpus erwähnten Werke. Information zu den Bildern zur
+               Verfügung gestellt von Leopold Museum, Wien.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <standOff>
+      <listObject>
+         <object xml:id="work0001" type="painting">
+            <objectIdentifier>
+               <objectName>Bekehrung</objectName>
+               <repository>
+                  <note>Vom Künstler aufgegeben und später zerschnitten.</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0002" type="painting">
+            <objectIdentifier>
+               <objectName>Agonie</objectName>
+               <repository ref="#org0007">
+                  <orgName>Bayerische Staatsgemäldesammlungen – Neue Pinakothek München</orgName>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0003" type="painting">
+            <objectIdentifier>
+               <objectName>Madonna</objectName>
+               <repository ref="#org0009">
+                  <orgName>Nachlass Hans Dichand</orgName>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0004" type="painting">
+            <objectIdentifier>
+               <objectName>Offenbarung</objectName>
+               <repository ref="#org0008">
+                  <orgName>Leopold Musem</orgName>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0005" type="unknown">
+            <objectIdentifier>
+               <objectName>Heilige</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0006" type="painting">
+            <objectIdentifier>
+               <objectName>Eremiten</objectName>
+               <repository ref="#org0008">
+                  <orgName>Leopold Musem</orgName>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0007" type="painting">
+            <objectIdentifier>
+               <objectName>Schwarzes Mädchen</objectName>
+               <objectName type="alt">Mädchen in Schwarz</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0008" type="painting">
+            <objectIdentifier>
+               <objectName>Asketen</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0009" type="painting">
+            <objectIdentifier>
+               <objectName>Herbstbäume</objectName>
+               <repository ref="#org0009">
+                  <orgName>Nachlass Hans Dichand</orgName>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0010" type="painting">
+            <objectIdentifier>
+               <objectName>Steinland</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0011" type="painting">
+            <objectIdentifier>
+               <objectName>Die kleine Stadt I</objectName>
+               <objectName type="alt">Tote Stadt VI</objectName>
+               <repository ref="#org0010">
+                  <orgName>Kunsthaus Zürich, Zürich</orgName>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0012" type="painting">
+            <objectIdentifier>
+               <objectName>Herbstland</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0013" type="painting">
+            <objectIdentifier>
+               <objectName>Boothafen</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0014" type="painting">
+            <objectIdentifier>
+               <objectName>Ruhende Segel</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0015" type="painting">
+            <objectIdentifier>
+               <objectName>Selbstseher</objectName>
+               <objectName type="alt">Selbstseher I</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0016" type="painting">
+            <objectIdentifier>
+               <objectName>Jesuiten</objectName>
+               <repository>
+                  <note>unbekannt</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0017" type="painting">
+            <objectIdentifier>
+               <objectName>Prozession</objectName>
+               <repository ref="#org0011">
+                  <note>Ernst Ploil</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+         <object xml:id="work0018" type="painting">
+            <objectIdentifier>
+               <objectName>Kahle Bäume</objectName>
+               <repository ref="#org0012">
+                  <note>Kunsthaus Zug, Stiftung Sammlung Kamm</note>
+               </repository>
+            </objectIdentifier>
+         </object>
+      </listObject>
+   </standOff>
+</TEI>

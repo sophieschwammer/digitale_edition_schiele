@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+
+    font-family: "Garamond", serif;
+
+    background-color: #E1C9AF;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-container h1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    }
+    
+
+/* Werke */
+.works {
+    margin-top: 40px;
+}
+
+.work {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.repo {
+    color: gray;
+    font-size: 0.9rem;
+}

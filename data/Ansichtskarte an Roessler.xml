@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+
+         </sourceDesc>
+
+
+      </fileDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="personen.html#pers0001">Egon Schiele</persName>
+               <placeName ref="orte.html#place0007">Győr</placeName>
+               <date when="1913-01-05">5. Januar 1913</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="personen.html#pers0007">Arthur Roessler</persName>
+               <address>
+                  <addrLine>Billrothstraße 6</addrLine>
+                  <addrLine>1190 <placeName ref="orte.html#place0001">Wien</placeName></addrLine>
+               </address>
+               <date notBefore="1913-01-05"/>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="de">Deutsch</language>
+            <language ident="hu">Ungarisch</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="postcard">
+
+            <div type="front">
+               <div type="printedText">
+                  <p>
+                     <seg xml:lang="hu"> Üdvözlet Győrből </seg>
+                     <note>Grüße aus Győr</note>
+                  </p>
+                  <p>
+                     <seg type="printed" xml:lang="hu"> Révfalu és Dunapart </seg>
+                     <note>Révfalu und Donauufer</note>
+                  </p>
+               </div>
+               <figure>
+                  <figDesc>Ansicht von <placeName ref="orte.html#place0007"
+                     >Győr.</placeName></figDesc>
+               </figure>
+            </div>
+
+
+            <div type="back" subtype="divided">
+               <p>
+                  <seg type="printed" xml:lang="hu"> Levelező-Lap </seg>
+                  <note>Korrespondenzseite</note>
+               </p>
+               <div type="message">
+                  <p type="handwritten">
+                     <hi rend="allcaps">HERZLICHE GRÜSSE!<lb/> SEHR LUSTIG HIER.<lb/> BITTE FÜR
+                           <persName ref="personen.html#pers0012">GOLTZ</persName><lb/> MIR DIE
+                        ANTWORT<lb/> ZU SCHREIBEN!<lb/>
+                        <persName ref="personen.html#pers0001">EGON SCHIELE</persName> 1913.</hi></p>
+               </div>
+               <div type="stamp">
+                  <note>Briefmarke und Poststempel vorhanden</note>
+               </div>
+               <div type="address" subtype="recipient" rend="allcaps">
+
+                  <p>
+                     <hi rend="allcaps">HERRN KUNSTSCHRIFT-<lb/> STELLER <persName
+                           ref="personen.html#pers0007">ARTHUR<lb/>RÖSSLER</persName>
+                        <lb/><placeName ref="orte.html#place0001">WIEN</placeName> XIX.
+                        <lb/>BILLROTHSTR. 6. </hi></p>
+
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

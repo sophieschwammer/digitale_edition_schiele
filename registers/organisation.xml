@@ -55,6 +55,30 @@
             <settlement ref="orte.xml#place0001">Wien</settlement>
             <note>Möbel- und Aufbewahrungsanstalt, Billrothstraße 4, 1190 Wien.</note>
          </org>
+         <org xml:id="org0007">
+            <orgName>Bayerische Staatsgemäldesammlungen – Neue Pinakothek München</orgName>
+            <settlement ref="orte.xml#place0005">München</settlement>
+         </org>
+         <org xml:id="org0008">
+            <orgName>Leopold Museum</orgName>
+            <settlement ref="orte.xml#place0001">Wien</settlement>
+         </org>
+         <org xml:id="org0009">
+            <orgName>Nachlass Hans Dichand</orgName>
+            <settlement ref="orte.xml#place0001">Wien</settlement>
+         </org>
+         <org xml:id="org0010">
+            <orgName>Kunsthaus Zürich</orgName>
+            <settlement ref="orte.xml#place0004">Zürich</settlement>
+         </org>
+         <org xml:id="org0011">
+            <orgName>Ernst Ploil</orgName>
+            <settlement ref="orte.xml#place0001">Wien</settlement>
+         </org>
+         <org xml:id="org0012">
+            <orgName>Kunsthaus Zug</orgName>
+            <settlement ref="orte.xml#place0009">Zug</settlement>
+         </org>
       </listOrg>
    </standOff>
 </TEI>

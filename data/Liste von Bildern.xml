@@ -18,7 +18,29 @@
   </teiHeader>
   <text>
       <body>
-         <p>Some text here.</p>
+         <p>– 80 x 70 <objectName ref="werke.html#work0001">„Bekehrung“</objectName> 1912. <persName ref="personen.html#pers0010">F. Hauer.</persName>
+            <lb/>– 80 x 70 <objectName ref="werke.html#work0002">„Agonie“</objectName> 1912. <persName ref="personen.html#pers0010">Hauer.</persName>
+            <lb/>80 x 80 – <objectName ref="werke.html#work0003">„Madonna“</objectName> 1911. <persName ref="personen.html#pers0008">Dr. Reichel</persName> <placeName ref="orte.html#place0008">Köln.</placeName>
+            <lb/>90 x 90 – <objectName ref="werke.html#work0004">„Offenbarung“</objectName> 1911. in <placeName ref="orte.html#place0005">München.</placeName>
+            <lb/>100 x 100 – <objectName ref="werke.html#work0005">„Heilige“</objectName> 1911. in <placeName ref="orte.html#place0005">München.</placeName>
+            <lb/>180 x 180 <objectName ref="werke.html#work0006">„Eremiten“</objectName> 1912. Spediteur in <placeName ref="orte.html#place0001">Wien</placeName>
+            <lb/>100 x 100 – <objectName ref="werke.html#work0007">„Schwarzes Mädchen“</objectName> 1911. <persName ref="personen.html#pers0008">Dr. R.</persName> <placeName ref="orte.html#place0008">Köln</placeName>
+            <lb/>– 80 x 70 <objectName ref="werke.html#work0008">„Asketen“</objectName> 1912. neu.
+            <lb/>80 x 80 – <objectName ref="werke.html#work0009">„Herbstbäume“</objectName> 1911. <persName ref="personen.html#pers0008">Dr. R.</persName>
+            <lb/>80 x 80 – <objectName ref="werke.html#work0010">„Steinland“</objectName> 1912. " "
+            <lb/>80 x 80 – <objectName ref="werke.html#work0011">„Tote Stadt“</objectName> 1912. <persName ref="personen.html#pers0011">Osthaus.</persName>
+            <lb/>80 x 80 – <objectName ref="werke.html#work0012">„Herbstland“</objectName> 1912. <persName ref="personen.html#pers0010">Hauer.</persName>
+            <lb/>– 80 x 70 <objectName ref="werke.html#work0013">„Boothafen“</objectName> 1912. neu.
+            <lb/>– 80 x 70 <objectName ref="werke.html#work0014">„Ruhende Segel“</objectName> 1912. neu.
+            
+            (1 Stück 80 x 70)
+            <lb/>5 Stück 80 x 70
+            <lb/>[rechts der geschwungenen Klammer:] ganz neu.
+            <lb/>5 Stück 80 x 80
+            <lb/>1 " 90 x 90
+            <lb/>2 " 100 x 100
+            <lb/>1 " 180 x 180
+         </p>
       </body>
   </text>
 </TEI>

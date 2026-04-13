@@ -78,6 +78,22 @@
             </location>
             <idno type="GND">https://d-nb.info/gnd/4103504-5</idno>
          </place>
+         <place xml:id="place0008">
+            <placeName>Köln</placeName>
+            <country>Deutschland</country>
+            <location>
+               <geo>50.9425 6.9589</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/4031483-2</idno>
+         </place>
+         <place xml:id="place0009">
+            <placeName>Zug</placeName>
+            <country>Schweiz</country>
+            <location>
+               <geo>47.1661 8.5154</geo>
+            </location>
+            <idno type="GND">https://d-nb.info/gnd/4068063-0</idno>
+         </place>
       </listPlace>
    </standOff>
 </TEI>

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+
+    font-family: "Garamond", serif;
+
+    background-color: #E1C9AF;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-container h1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    }
+    
+.intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.text {
+   font-size: 18px;
+   margin-left: 30px;
+   
+}
+
+.menu a {
+    margin: 20px;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}

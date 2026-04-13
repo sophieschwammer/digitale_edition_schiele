@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/transform.xsl"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -18,45 +19,58 @@
       <profileDesc>
          <correspDesc>
             <correspAction type="sent">
-               <persName>Egon Schiele</persName>
-               <placeName>"unknown"</placeName>
-               <date when="1913-05-31"/>
+               <persName ref="personen.html#pers0001">Egon Schiele</persName>
+               <placeName/>
+               <date when="1913-05-31">31. Mai 1913</date>
             </correspAction>
             <correspAction type="received">
-               <persName>Oskar Reichel</persName>
-               <placeName>"unknown"</placeName>
+               <persName ref="personen.html#pers0008">Oskar Reichel</persName>
+               <placeName/>
                <date/>
             </correspAction>
          </correspDesc>
+         <langUsage>
+            <language ident="de">Deutsch</language>
+         </langUsage>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div type="letterBody">
+         <div type="letter">
             <opener>
                <dateline>31. Mai 1913.</dateline>
-               <salute>Lieber Herr Dr. Reichel!</salute> -in<lb/>
+               <salute>Lieber Herr Dr. <persName ref="personen.html#pers0008"
+                  >Reichel</persName>!</salute> -in<lb/>
             </opener>
             <p>
-               <pb/> Ihr Bild die „Selbstseher“ waren beim Scholz<lb/> und sind augenblicklich bei
-               mir. Ich bitte<lb/> Sie senden Sie mir Ihre beiden Bilder<lb/> Jesuiten und
-               Prozession eventuell die<lb/> eine Landschaft die in der hiesigen Sezession<lb/> war.
-               [4] die drei, bitte, ich brauche diese<lb/> notwendig und Ihr Einverständnis
-               diese<lb/> eventuell in München wieder verkau-<lb/> fen zu können. Zugleich geben Sie
-               die<lb/> alten Bilder mit und der Überbringer<lb/> nimmt von mir dann die Selbstseher
+               <pb/> Ihr Bild die <objectName ref="werke.html#work0015">„Selbstseher“</objectName>
+               waren beim <orgName ref="organisation.html#org0003">Scholz</orgName><lb/> und sind
+               augenblicklich bei mir. Ich bitte<lb/> Sie senden Sie mir Ihre beiden Bilder<lb/>
+               <objectName ref="werke.html#work0016">Jesuiten</objectName> und <objectName
+                  ref="werke.html#work0017">Prozession</objectName> eventuell die<lb/> eine
+                  <objectName ref="werke.html#work0009 werke.html#work0018">Landschaft</objectName>
+               <note>Die Identifizierung des genannten Werkes ist unsicher; gemeint sein könnte
+                  entweder „Herbstbäume“ oder „Kahle Bäume“.</note> die in der hiesigen <orgName
+                  ref="organisation.html#org0004">Sezession</orgName><lb/> war. die drei, bitte, ich
+               brauche diese<lb/> notwendig und Ihr Einverständnis diese<lb/> eventuell in
+                  <placeName ref="orte.html#place0005">München</placeName> wieder verkau-<lb/> fen zu
+               können. Zugleich geben Sie die<lb/> alten Bilder mit und der Überbringer<lb/> nimmt
+               von mir dann die <objectName ref="werke.html#work0015">Selbstseher</objectName>
                mit.<lb/> – Schreiben Sie mir aber nicht daß ich<lb/> genug Bilder habe und diese
                nicht brauche,<lb/> denn es ist zu lange um hier erklären zu<lb/> können warum ich
-               die drei Bilder brauche.<lb/> Mit besten Grüßen Egon Schiele.<lb/> Wien XIII:<lb/>
-               Hietzinger Hauptstr.[aße] 101.<lb/>
-               <persName ref="#personen.xmlpers0009">K. Reininghaus</persName> schreibt den Preis
+               die drei Bilder brauche.<lb/></p> <closer>
+                  <salute>Mit besten Grüßen</salute>
+                  <signed>Egon Schiele.</signed>
+               </closer></div>
+         <div>
+            <p>
+               <placeName ref="orte.html#place0001">Wien</placeName> XIII:<lb/> Hietzinger Hauptstr. 101.<lb/>
+               <persName ref="personen.html#pers0009">K. Reininghaus</persName> schreibt den Preis
                von 3000 K[ronen] aus;<lb/> er lud mich ein; ich bin wenig einverstanden;
-               näheres<lb/> in der Presse von heute 31. Mai 1913. <lb/>
+               näheres<lb/> in der <orgName ref="organisation.html#org0005">Presse</orgName> von
+               heute 31. Mai 1913. <lb/>
             </p>
          </div>
-         <closer>
-            <salute>Auf Wiedersehn</salute>
-            <signed><persName ref="#pers0001">EGON<lb/> SCHIELE<lb/></persName> 1917</signed>
-         </closer>
       </body>
    </text>
 </TEI>

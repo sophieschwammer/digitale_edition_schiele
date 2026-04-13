@@ -31,7 +31,7 @@
                <lb/>dem Überbringer die Figur mit! </p>
                <closer>
                   <salute>Beste Grüße!</salute>
-                  <signed>EGON SCHIELE</signed>
+                  <signed><persName ref="personen.xml#pers0001">EGON SCHIELE</persName></signed>
                </closer>
                
          </div>

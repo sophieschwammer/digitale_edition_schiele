@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/transform.xsl"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -18,44 +19,49 @@
       <profileDesc>
          <correspDesc>
             <correspAction type="sent">
-               <persName>Egon Schiele</persName>
-               <placeName>"unknown"</placeName>
-               <date when="1917-10-04"/>
+               <persName ref="personen.html#pers0001">Egon Schiele</persName>
+               <placeName/>
+               <date when="1917-10-04">04. Oktober 1917</date>
             </correspAction>
             <correspAction type="received">
-               <persName>Arthur Roessler</persName>
-               <placeName>"unknown"</placeName>
+               <persName ref="personen.html#pers0007">Arthur Roessler</persName>
+               <placeName/>
                <date/>
             </correspAction>
          </correspDesc>
+         <langUsage>
+            <language ident="de">Deutsch</language>
+         </langUsage>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div type="letterBody">
+         <div type="letter">
             <opener>
                <dateline>4. Oktober</dateline>
-               <salute>Lieber A.R.</salute> -in<lb/>
+               <salute>Lieber <persName ref="personen.html#pers0007">A.R.</persName></salute><lb/>
             </opener>
             <p>
-               <pb/> ich habe Ihren Brief vom 28. v. M. [vorigen Monats] erhalten, ebenso<lb/> die 4
-               Fotos, das Bild und die primitive Plastik<lb/> bis jetzt noch nicht hingegen die Uhr
-               welche in<lb/> Reparatur ist habe ich.<lb/> Den singenden Engel möchte ich sehr
-               gerne<lb/> haben, Sie erwähnten K[ronen] 600- für mich, wenn<lb/> Sie 12 farbige
-               Zeichnungen wollen?<lb/> Sehr gerne möchte ich eine schöne, alte, eingelegte<lb/>
-               Kredenz, – ich sah vor [ein] paar Tagen in München<lb/> sehr sehr schöne Stücke.
-               Dafür wäre ich gerne bereit<lb/> ein größeres [Einfügung, s. u.: +] neues Bild mit
-               Ihnen zu tauschen<lb/> und würde Ihnen, genau so wie bei den Zeichnun-<lb/> gen die
-               Hälfte dafür rechnen, u. zw. [und zwar] habe ich die<lb/> Landschaften mit K 2000-,
-               die Porträts mit K 3000-<lb/> und die anderen größeren Bilder mit mehr ange-<lb/>
-               schrieben und es würde dann die Hälfte sein. –<lb/> Allerdings geht dies nicht von
-               heute auf morgen<lb/> und ich meine nur gelegentlich, und ein ausge-<lb/> zeichnetes
-               Stück. Vorderhand erwarte ich betreffs<lb/> des Engels Ihre Antwort. <lb/>
+               <pb/> ich habe Ihren Brief vom 28. v. M. erhalten, ebenso<lb/> die 4 Fotos, das Bild
+               und die primitive Plastik<lb/> bis jetzt noch nicht hingegen die Uhr welche in<lb/>
+               Reparatur ist habe ich.<lb/> Den singenden Engel möchte ich sehr gerne<lb/> haben,
+               Sie erwähnten K[ronen] 600- für mich, wenn<lb/> Sie 12 farbige Zeichnungen
+               wollen?<lb/> Sehr gerne möchte ich eine schöne, alte, eingelegte<lb/> Kredenz, – ich
+               sah vor [ein] paar Tagen in <placeName ref="orte.html#place0005"
+               >München</placeName><lb/> sehr sehr schöne Stücke. Dafür wäre ich gerne bereit<lb/>
+               ein größeres <add place="above">+ oder mehrere</add> neues Bild mit Ihnen zu tauschen<lb/> und
+               würde Ihnen, genau so wie bei den Zeichnun-<lb/> gen die Hälfte dafür rechnen, u. zw.
+               habe ich die<lb/> Landschaften mit K 2000-, die Porträts mit K 3000-<lb/> und die
+               anderen größeren Bilder mit mehr ange-<lb/> schrieben und es würde dann die Hälfte
+               sein. –<lb/> Allerdings geht dies nicht von heute auf morgen<lb/> und ich meine nur
+               gelegentlich, und ein ausge-<lb/> zeichnetes Stück. Vorderhand erwarte ich
+               betreffs<lb/> des Engels Ihre Antwort. <lb/>
             </p>
          </div>
          <closer>
             <salute>Freundliche Grüße</salute>
-            <signed>EGON<lb/> SCHIELE<lb/> 1917</signed>
+            <signed>
+               <hi rend="allcaps framed">EGON<lb/>SCHIELE<lb/>1917</hi></signed>
          </closer>
       </body>
    </text>

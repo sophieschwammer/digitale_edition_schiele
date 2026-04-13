@@ -19,46 +19,59 @@
       <profileDesc>
          <correspDesc>
             <correspAction type="sent">
-               <persName>Egon Schiele</persName>
-               <placeName>"unknown"</placeName>
-               <date when="1917-02-13"/>
+               <persName ref="personen.html#pers0001">Egon Schiele</persName>
+               <placeName ref="organisation.html#org0002"
+                  >Konsum-Anstalt</placeName>
+               <date when="1917-02-13">13. Februar 1917</date>
             </correspAction>
             <correspAction type="received">
-               <persName>Ferdinand Kofron</persName>
-               <placeName>"unknown"</placeName>
+               <persName ref="personen.html#pers0002">Ferdinand Kofron</persName>
+               <placeName/>
                <date/>
             </correspAction>
          </correspDesc>
+         <langUsage>
+            <language ident="de">Deutsch</language>
+         </langUsage>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div type="letterBody">
+         <div type="letter">
             <opener>
                <dateline>13. Februar 1917.</dateline>
-               <salute>Lieber Herr <persName ref="personen.xml#pers0002">Kofron</persName>!</salute> -in<lb/>
+               <salute>Lieber Herr <persName ref="personen.html#pers0002">Kofron</persName>!</salute>
+               -in<lb/>
             </opener>
             <p>
-               <pb/> einigen Tagen bin <persName ref="personen.xml#pers0001">ich</persName> ein Monat in <placeName ref="#personen.xmlpl0001">Wien</placeName>. –<lb/> Wie geht es Ihnen und wird Ihre
-               Enthebung<lb/> gelingen? – <persName ref="personen.xml#pers0001">ich</persName> wünscht [!] es <persName ref="personen.xml#pers0002">Ihnen</persName>. – Was macht<lb/> <persName ref="#pers0003">Filetz</persName>, ich
-               laße ihn bestens grüßen, – auch die<lb/> übrigen in <placeName ref="orte.xml#pl0002">Mühling</placeName> verbannten.<lb/> ich habe
-               an Wochentagen von 8–3 respekt.[ektive] 4h [Dienst]<lb/> dann Schluß, – Sonn u.
-               Feiertage frei. –<lb/> es geht mir wirklich sehr gut. – Ich arbeite für mich<lb/>
+               <pb/> einigen Tagen bin ich ein Monat in <placeName ref="personen.html#pl0001"
+                  >Wien</placeName>. –<lb/> Wie geht es Ihnen und wird Ihre Enthebung<lb/> gelingen?
+               – ich wünscht [sic!] es Ihnen. – Was macht<lb/>
+               <persName ref="personen.html#pers0003">Filetz</persName>, ich laße ihn bestens grüßen,
+               – auch die<lb/> übrigen in <placeName ref="orte.html#place0002">Mühling</placeName>
+               verbannten.<lb/> ich habe an Wochentagen von 8–3 respekt. 4h<lb/> dann Schluß, – Sonn
+               u. Feiertage frei. –<lb/> es geht mir wirklich sehr gut. – Ich arbeite für mich<lb/>
                täglich und bekomme lauter neue Käufer. –<lb/> Es wird mit Hochdruck gearbeitet. –
-               Die Zeichnung<lb/> von <persName ref="personen.xml#pers0004">Höllriegl</persName> hängt bereits im <orgName ref="organisation.xml#org0001">Grazer Museum</orgName>.<lb/> – Hier in der
-               <orgName ref="organisation.xml#org0002">Konsum-Anstalt</orgName> bekomme ich<lb/> Zigaretten, Fett, Zucker, Kaffee u.s.w. auch
-               trink<lb/> ich fleißig Probeschnäpse. – ich sitze mit einem<lb/> netten <persName ref="personen.xml#pers0005">Fräulein</persName>
-               allein in einen [!] Zimmer, – Auweh!<lb/> sonst geht es hier ganz zivilistisch zu. –
-               Das böseste<lb/> wird jetzt die Straßenbahn werden, – kein<lb/> Verkehrsmittel für
-               <placeName ref="orte.xml#pl0001">Wien</placeName> ist bedenklich. –<lb/> Wenn Sie nach <placeName ref="orte.xml#pl0001">Wien</placeName> kommen besuchen Sie mich<lb/> einmal,
-               – schreiben Sie aber bitte vorerst<lb/> damit ich daheim bin. – Wie der Krieg
-               aus<lb/> ist, fahren wir nach <placeName ref="orte.xml#pl0004">Zürich</placeName>.<lb/> Einstweilen freundliche Grüße und<lb/>
-               Empfehlungen an Ihre <persName ref="personen.xml#pers0006">Frau</persName><lb/>
+               Die Zeichnung<lb/> von <persName ref="personen.html#pers0004">Höllriegl</persName>
+               hängt bereits im <orgName ref="organisation.html#org0001">Grazer
+               Museum</orgName>.<lb/> – Hier in der <orgName ref="organisation.html#org0002"
+                  >Konsum-Anstalt</orgName> bekomme ich<lb/> Zigaretten, Fett, Zucker, Kaffee u.s.w.
+               auch trink<lb/> ich fleißig Probeschnäpse. – ich sitze mit einem<lb/> netten
+                  <persName ref="personen.html#pers0005">Fräulein</persName> allein in einen [sic!]
+               Zimmer, – Auweh!<lb/> sonst geht es hier ganz zivilistisch zu. – Das böseste<lb/>
+               wird jetzt die Straßenbahn werden, – kein<lb/> Verkehrsmittel für <placeName
+                  ref="orte.html#place0001">Wien</placeName> ist bedenklich. –<lb/> Wenn Sie nach
+                  <placeName ref="orte.html#place0001">Wien</placeName> kommen besuchen Sie mich<lb/>
+               einmal, – schreiben Sie aber bitte vorerst<lb/> damit ich daheim bin. – Wie der Krieg
+               aus<lb/> ist, fahren wir nach <placeName ref="orte.html#place0004"
+               >Zürich</placeName>.<lb/> Einstweilen freundliche Grüße und<lb/> Empfehlungen an Ihre
+                  <persName ref="personen.html#pers0006">Frau</persName><lb/>
             </p>
          </div>
          <closer>
             <salute>Auf Wiedersehn</salute>
-            <signed><persName ref="personen.xml#pers0001">EGON<lb/> SCHIELE<lb/></persName> 1917</signed>
+            <signed>
+               <hi rend="allcaps framed">EGON<lb/>SCHIELE<lb/>1917</hi></signed>
          </closer>
       </body>
    </text>
