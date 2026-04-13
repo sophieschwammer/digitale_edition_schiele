@@ -4,23 +4,20 @@
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
     version="3.0">
 
-    <!-- STARTPUNKT -->
+<xsl:template match="tei:teiHeader"/>
     <xsl:template match="/">
 
         <html>
             <head>
                 <title>Schiele Edition</title>
-                <link rel= "stylesheet" href="../css/style.css"/>
+                <link rel="stylesheet" href="../css/style.css"/>
             </head>
 
             <body>
                 <h1>Schiele Edition</h1>
-                
-                <!-- Für normale Texte -->
-                <xsl:apply-templates select="//tei:text"/>
-                
-                <!-- Für Werksverzeichnis -->
-                <xsl:apply-templates select="//tei:listObject"/>
+
+                <xsl:apply-templates/>
+
             </body>
         </html>
 
@@ -80,7 +77,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
     <!-- Werke -->
     <xsl:template match="tei:objectName">
         <xsl:choose>
@@ -96,45 +93,51 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    
+    <!-- Nur für Werksverzeichnis -->
+    <xsl:template match="tei:objectIdentifier/tei:objectName">
+        <span class="work-title">
+            <xsl:value-of select="."/>
+        </span>
+    </xsl:template>
 
-    <xsl:template match="tei:div[@type='address'][@rend='allcaps']">
+    <xsl:template match="tei:div[@type = 'address'][@rend = 'allcaps']">
         <div class="postcard-address-uppercase">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-    
+
     <xsl:template match="tei:div">
-        <div>
+        <div class="{@type}">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-    
+
     <xsl:template match="tei:listObject">
         <div class="works">
             <xsl:apply-templates select="tei:object"/>
         </div>
     </xsl:template>
-    
+
     <xsl:template match="tei:object">
-        <div class="work">
-            
+        <div class="work" id="{@xml:id}">
+
             <h2>
-                <xsl:value-of select="tei:objectIdentifier/tei:objectName[1]"/>
+                <xsl:apply-templates select="tei:objectIdentifier/tei:objectName[1]"/>
             </h2>
-            
-            <xsl:if test="tei:objectIdentifier/tei:objectName[@type='alt']">
-                <p>
-                    (<xsl:value-of select="tei:objectIdentifier/tei:objectName[@type='alt']"/>)
+
+            <xsl:if test="tei:objectIdentifier/tei:objectName[@type = 'alt']">
+                <p> (<xsl:value-of select="tei:objectIdentifier/tei:objectName[@type = 'alt']"/>)
                 </p>
             </xsl:if>
-            
+
             <p class="repo">
                 <xsl:apply-templates select="tei:objectIdentifier/tei:repository"/>
             </p>
-            
+
         </div>
     </xsl:template>
-    
+
     <xsl:template match="tei:repository">
         <xsl:choose>
             <xsl:when test="tei:orgName">
@@ -144,5 +147,29 @@
                 <xsl:value-of select="tei:note"/>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:list">
+        <ul>
+            <xsl:apply-templates/>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="tei:item">
+        <li>
+            <xsl:apply-templates/>
+        </li>
+    </xsl:template>
+    
+    <xsl:template match="tei:list[@type='sublist']">
+        <div class="sublist">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:note[@type='grouping']">
+        <div class="group-note">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
 </xsl:stylesheet>

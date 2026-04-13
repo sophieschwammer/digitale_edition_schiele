@@ -1,0 +1,49 @@
+body {
+    margin: 30px;
+    height: 100vh;
+
+
+    font-family: "Garamond", serif;
+
+    background-color: #E1C9AF;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-container h1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+ul {
+    list-style-type: none; /* eigene Symbole */
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.symbol {
+    margin-right: 10px;
+}
+
+.sublist {
+    border-left: 2px solid black;
+    padding-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.group-note {
+    margin-left: 120px; /* rechts neben Liste */
+    font-style: italic;
+}
+
+.symbol-bracket {
+    font-size: 24px;
+}
