@@ -35,30 +35,66 @@
 
     <!-- Personen -->
     <xsl:template match="tei:persName">
-        <span class="person">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:choose>
+            <xsl:when test="@ref">
+                <a href="{@ref}" class="person">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="person">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- Orte -->
     <xsl:template match="tei:placeName">
-        <span class="place">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:choose>
+            <xsl:when test="@ref">
+                <a href="{@ref}" class="place">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="place">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- Organisationen -->
     <xsl:template match="tei:orgName">
-        <span class="org">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:choose>
+            <xsl:when test="@ref">
+                <a href="{@ref}" class="org">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="org">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <!-- Werke -->
     <xsl:template match="tei:objectName">
-        <span class="work">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:choose>
+            <xsl:when test="@ref">
+                <a href="{@ref}" class="work">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="work">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:div[@type='address'][@rend='allcaps']">
