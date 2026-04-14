@@ -1,0 +1,39 @@
+body {
+    margin: 30px;
+    height: 100vh;
+
+
+    font-family: "Garamond", serif;
+
+    background-color: #E1C9AF;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-container h1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.pagebreak {
+    display: block;
+    margin: 10px 0;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.visitenkarte {
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+}
+
+.printed {
+    text-transform: uppercase;
+}

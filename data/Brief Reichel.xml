@@ -99,7 +99,7 @@
             <opener>
                <dateline>31. Mai 1913.</dateline>
                <salute>Lieber Herr Dr. <persName ref="personen.html#pers0008"
-                  >Reichel</persName>!</salute> -in<lb/>
+                  >Reichel</persName>!</salute><lb/>
             </opener>
             <p>
                <pb/> Ihr Bild die <objectName ref="werke.html#work0015">„Selbstseher“</objectName>
@@ -121,7 +121,7 @@
                   <salute>Mit besten Grüßen</salute>
                   <signed>Egon Schiele.</signed>
                </closer></div>
-         <div>
+         <div type="postscript">
             <p>
                <placeName ref="orte.html#place0001">Wien</placeName> XIII:<lb/> Hietzinger Hauptstr. 101.<lb/>
                <persName ref="personen.html#pers0009">K. Reininghaus</persName> schreibt den Preis

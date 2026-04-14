@@ -234,4 +234,35 @@
     <xsl:template match="tei:pb">
         <hr class="pagebreak"/>
     </xsl:template>
+    
+    <!-- Brief Reichel -->
+    <xsl:template match="tei:note">
+        <span class="note">
+            (<xsl:apply-templates/>)
+        </span>
+    </xsl:template>
+    
+    
+    <xsl:template match="tei:div[@type='postscript']">
+        <div class="postscript">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <!-- Visitenkarte -->
+    <xsl:template match="tei:pb">
+        <span class="pagebreak">[Seite <xsl:value-of select="@n"/>]</span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='businesscard']">
+        <div class="visitenkarte">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type='printed']">
+        <span class="printed">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
 </xsl:stylesheet>

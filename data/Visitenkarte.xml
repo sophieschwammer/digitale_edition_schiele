@@ -56,7 +56,7 @@
                   <history>
                      <origin>
                         <origPlace>o.O.</origPlace>
-                        <origDate/>
+                        <origDate cert="low">o.D.</origDate>
                      </origin>
                   </history>
 
@@ -90,20 +90,22 @@
    <text>
       <body>
          <pb n="1"/>
-         <div type="Visitenkarte">
+         <div type="businesscard">
             <opener>
-               <salute>Lieber Herr <persName ref="personen.xml#pers0007">Rößler</persName>!</salute>
-               /ich komme<lb/>
+               <salute>Lieber Herr <persName ref="personen.html#pers0007">Rößler</persName></salute>
+               /ich komme
             </opener>
             <p> heute abends um ½ 7h zu Ihnen. <lb/>3 Holzschnitte gaben Sie mir; <lb/>ich habe aber
                den Karton worauf <lb/>diese kleben knapp abgeschnitten, <lb/>weil ich sie rahmen
                wollte; einer <lb/>von ihnen war größer, der ist <lb/>etwas abgeschnitten. Geben Sie
                   <pb n="2"/>
                <lb/>dem Überbringer die Figur mit! </p>
+            
                <closer>
                   <salute>Beste Grüße!</salute>
-                  <signed><persName ref="personen.xml#pers0001">EGON SCHIELE</persName></signed>
+                  <seg type="printed">Egon Schiele</seg>
                </closer>
+            
                
          </div>
       </body>
