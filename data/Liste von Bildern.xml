@@ -12,9 +12,9 @@
                <name>Sophie Schwammer</name>
             </respStmt>
          </titleStmt>
+         
          <publicationStmt>
-            <publisher>Bleibt im Rahmen des Seminars "Digitale Edition"
-               unveröffentlicht.</publisher>
+            <publisher>Unveröffentlicht im Rahmen des Seminars „Digitale Edition“</publisher>
             <!-- Lizenz -->
             <availability status="free">
                <licence target="https://creativecommons.org/publicdomain/mark/1.0/"> Public Domain
@@ -70,10 +70,10 @@
             </bibl>
          </sourceDesc>
       </fileDesc>
-      <!-- Sprache -->
       <profileDesc>
+         <!-- Sprache -->
          <langUsage>
-            <language ident="de-AT">Deutsch (Österreich)</language>
+            <language ident="de">Deutsch</language>
          </langUsage>
       </profileDesc>
    </teiHeader>

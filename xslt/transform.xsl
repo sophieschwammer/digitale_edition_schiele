@@ -172,4 +172,66 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    
+    <!-- Briefe -->
+    <xsl:template match="tei:div[@type='letter']">
+        <div class="letter">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
+    
+    <xsl:template match="tei:pb">
+        <hr/>
+    </xsl:template>
+    
+    <xsl:template match="tei:opener">
+        <div class="opener">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:closer">
+        <div class="closer">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:salute">
+        <p class="salute">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:signed">
+        <p class="signed">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:dateline">
+        <p class="dateline">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend='allcaps']">
+        <span class="allcaps">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <!-- Brief Roessler -->
+    <xsl:template match="tei:add">
+        <span class="add">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:pb">
+        <hr class="pagebreak"/>
+    </xsl:template>
 </xsl:stylesheet>

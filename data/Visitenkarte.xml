@@ -6,15 +6,86 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
-         </titleStmt>
-         <publicationStmt>
-            <p>Publication Information</p>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Information about the source</p>
-         </sourceDesc>
+               <title>Visitenkarte an Arthur Roessler</title>
+               <respStmt>
+                  <resp>TEI-Kodierung</resp>
+                  <name>Sophie Schwammer</name>
+               </respStmt>
+            </titleStmt>
+            
+            <publicationStmt>
+               <publisher>Unveröffentlicht im Rahmen des Seminars „Digitale Edition“</publisher>
+               <!-- Lizenz -->
+               <availability status="free">
+                  <licence target="https://creativecommons.org/publicdomain/mark/1.0/">
+                     Public Domain Mark 1.0
+                  </licence>
+               </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+               <msDesc>
+                  <!-- Identifikation -->
+                  <msIdentifier>
+                     <repository>Wienbibliothek im Rathaus</repository>
+                     <collection>Nachlass Arthur Roessler</collection>
+                     <idno>H.I.N.-180624</idno>
+                  </msIdentifier>
+                  
+                  <!-- Inhalt -->
+                  <msContents>
+                     <msItem>
+                        <author>Egon Schiele</author>
+                        <title>Visitenkarte</title>
+                     </msItem>
+                  </msContents>
+                  
+                  <!-- Physische Beschreibung -->
+                  <physDesc>
+                     <objectDesc>
+                        <supportDesc>
+                           <extent>1 Karte</extent>
+                        </supportDesc>
+                     </objectDesc>
+                     <handDesc>
+                        <p>handschriftlich, Tinte; Name gedruckt auf Vorderseite</p>
+                     </handDesc>   
+                  </physDesc>
+                  
+                  <!-- Entstehung -->
+                  <history>
+                     <origin>
+                        <origPlace>o.O.</origPlace>
+                        <origDate/>
+                     </origin>
+                  </history>
+
+               </msDesc>
+               
+               <!-- Onlinequelle -->
+               <bibl>
+                  <ref target="https://resolver.obvsg.at/urn:nbn:at:AT-WBR-52324">
+                     Digitale Reproduktion
+                  </ref>
+               </bibl>
+            </sourceDesc>
       </fileDesc>
+      
+      <profileDesc>
+         <!-- Sprache -->
+         <langUsage>
+            <language ident="de">Deutsch</language>
+         </langUsage>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="personen.html#pers0001">Egon Schiele</persName>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="personen.html#pers0007">Arthur Roessler</persName>
+            </correspAction>
+         </correspDesc>
+         
+      </profileDesc>
    </teiHeader>
    <text>
       <body>

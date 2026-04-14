@@ -62,6 +62,10 @@
             <persName>
                <surname>Roessler</surname>
                <forename>Arthur</forename>
+               <choice>
+                  <abbr>A.R.</abbr>
+                  <expan>Arthur Roessler</expan>
+               </choice>
             </persName>
             <birth when="1877-02-20">20. Februar 1877 <placeName ref="orte.xml#place0001"
                   >Wien</placeName>

@@ -7,16 +7,78 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Brief an Oskar Reichel</title>
+            <respStmt>
+               <resp>TEI-Kodierung</resp>
+               <name>Sophie Schwammer</name>
+            </respStmt>
          </titleStmt>
+         
          <publicationStmt>
-            <p>Publication Information</p>
+            <publisher>Unveröffentlicht im Rahmen des Seminars „Digitale Edition“</publisher>
+            <!-- Lizenz -->
+            <availability status="free">
+               <licence target="https://creativecommons.org/publicdomain/mark/1.0/">
+                  Public Domain Mark 1.0
+               </licence>
+            </availability>
          </publicationStmt>
+         
          <sourceDesc>
-            <p>Information about the source</p>
+            <msDesc>
+               <!-- Identifikation -->
+               <msIdentifier>
+                  <repository>Wienbibliothek im Rathaus</repository>
+                  <collection>Nachlass Hans Ankwicz-Kleehoven</collection>
+                  <idno>H.I.N.-159470</idno>
+               </msIdentifier>
+               
+               <!-- Inhalt -->
+               <msContents>
+                  <msItem>
+                     <author>Egon Schiele</author>
+                     <title>Brief an Oskar Reichel</title>
+                  </msItem>
+               </msContents>
+               
+               <!-- Physische Beschreibung -->
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <extent>2 Blätter</extent>
+                        <condition>
+                           <p>Wasserschäden</p>
+                        </condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <p>handschriftlich; teilweise farbig unterstrichen, Tinte</p>
+                  </handDesc>   
+               </physDesc>
+               
+               <!-- Entstehung -->
+               <history>
+                  <origin>
+                     <origPlace>o.O.</origPlace>
+                     <origDate when="1913-05-31"/>
+                  </origin>
+               </history>
+            </msDesc>
+            
+            <!-- Onlinequelle -->
+            <bibl>
+               <ref target="https://resolver.obvsg.at/urn:nbn:at:AT-WBR-53287">
+                  Digitale Reproduktion (Wienbibliothek)
+               </ref>
+            </bibl>
          </sourceDesc>
       </fileDesc>
+      
       <profileDesc>
+         <!-- Sprache -->
+         <langUsage>
+            <language ident="de">Deutsch</language>
+         </langUsage>
          <correspDesc>
             <correspAction type="sent">
                <persName ref="personen.html#pers0001">Egon Schiele</persName>
@@ -29,9 +91,6 @@
                <date/>
             </correspAction>
          </correspDesc>
-         <langUsage>
-            <language ident="de">Deutsch</language>
-         </langUsage>
       </profileDesc>
    </teiHeader>
    <text>

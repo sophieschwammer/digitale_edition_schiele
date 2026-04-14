@@ -7,21 +7,76 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Brief an Ferdinand Kofron</title>
+            <respStmt>
+               <resp>TEI-Kodierung</resp>
+               <name>Sophie Schwammer</name>
+            </respStmt>
          </titleStmt>
+
          <publicationStmt>
-            <p>Publication Information</p>
+            <publisher>Unveröffentlicht im Rahmen des Seminars „Digitale Edition“</publisher>
+            <!-- Lizenz -->
+            <availability status="free">
+               <licence target="https://creativecommons.org/publicdomain/mark/1.0/"> Public Domain
+                  Mark 1.0 </licence>
+            </availability>
          </publicationStmt>
+
          <sourceDesc>
-            <p>Information about the source</p>
+            <msDesc>
+               <!-- Identifikation -->
+               <msIdentifier>
+                  <repository>Wienbibliothek im Rathaus</repository>
+                  <idno>H.I.N.-109244</idno>
+               </msIdentifier>
+
+               <!-- Inhalt -->
+               <msContents>
+                  <msItem>
+                     <author>Egon Schiele</author>
+                     <title>Brief an Ferdinand Kofron</title>
+                  </msItem>
+               </msContents>
+
+               <!-- Physische Beschreibung -->
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <extent>1 Blatt</extent>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <p>handschriftlich, Tinte</p>
+                  </handDesc>
+               </physDesc>
+
+               <!-- Entstehung -->
+               <history>
+                  <origin>
+                     <origPlace>o.O.</origPlace>
+                     <origDate when="1917-02-13"/>
+                  </origin>
+               </history>
+            </msDesc>
+
+            <!-- Onlinequelle -->
+            <bibl>
+               <ref target="https://resolver.obvsg.at/urn:nbn:at:AT-WBR-53641"> Digitale
+                  Reproduktion (Wienbibliothek) </ref>
+            </bibl>
          </sourceDesc>
       </fileDesc>
+      
       <profileDesc>
+         <!-- Sprache -->
+         <langUsage>
+            <language ident="de">Deutsch</language>
+         </langUsage>
          <correspDesc>
             <correspAction type="sent">
                <persName ref="personen.html#pers0001">Egon Schiele</persName>
-               <placeName ref="organisation.html#org0002"
-                  >Konsum-Anstalt</placeName>
+               <placeName ref="organisation.html#org0002">Konsum-Anstalt</placeName>
                <date when="1917-02-13">13. Februar 1917</date>
             </correspAction>
             <correspAction type="received">
@@ -30,9 +85,6 @@
                <date/>
             </correspAction>
          </correspDesc>
-         <langUsage>
-            <language ident="de">Deutsch</language>
-         </langUsage>
       </profileDesc>
    </teiHeader>
    <text>
@@ -40,32 +92,33 @@
          <div type="letter">
             <opener>
                <dateline>13. Februar 1917.</dateline>
-               <salute>Lieber Herr <persName ref="personen.html#pers0002">Kofron</persName>!</salute>
-               -in<lb/>
+               <salute>Lieber Herr <persName ref="personen.html#pers0002"
+                  >Kofron</persName>!</salute> -in<lb/>
             </opener>
             <p>
                <pb/> einigen Tagen bin ich ein Monat in <placeName ref="personen.html#pl0001"
                   >Wien</placeName>. –<lb/> Wie geht es Ihnen und wird Ihre Enthebung<lb/> gelingen?
                – ich wünscht [sic!] es Ihnen. – Was macht<lb/>
-               <persName ref="personen.html#pers0003">Filetz</persName>, ich laße ihn bestens grüßen,
-               – auch die<lb/> übrigen in <placeName ref="orte.html#place0002">Mühling</placeName>
-               verbannten.<lb/> ich habe an Wochentagen von 8–3 respekt. 4h<lb/> dann Schluß, – Sonn
-               u. Feiertage frei. –<lb/> es geht mir wirklich sehr gut. – Ich arbeite für mich<lb/>
-               täglich und bekomme lauter neue Käufer. –<lb/> Es wird mit Hochdruck gearbeitet. –
-               Die Zeichnung<lb/> von <persName ref="personen.html#pers0004">Höllriegl</persName>
-               hängt bereits im <orgName ref="organisation.html#org0001">Grazer
-               Museum</orgName>.<lb/> – Hier in der <orgName ref="organisation.html#org0002"
-                  >Konsum-Anstalt</orgName> bekomme ich<lb/> Zigaretten, Fett, Zucker, Kaffee u.s.w.
-               auch trink<lb/> ich fleißig Probeschnäpse. – ich sitze mit einem<lb/> netten
-                  <persName ref="personen.html#pers0005">Fräulein</persName> allein in einen [sic!]
-               Zimmer, – Auweh!<lb/> sonst geht es hier ganz zivilistisch zu. – Das böseste<lb/>
-               wird jetzt die Straßenbahn werden, – kein<lb/> Verkehrsmittel für <placeName
-                  ref="orte.html#place0001">Wien</placeName> ist bedenklich. –<lb/> Wenn Sie nach
-                  <placeName ref="orte.html#place0001">Wien</placeName> kommen besuchen Sie mich<lb/>
-               einmal, – schreiben Sie aber bitte vorerst<lb/> damit ich daheim bin. – Wie der Krieg
-               aus<lb/> ist, fahren wir nach <placeName ref="orte.html#place0004"
-               >Zürich</placeName>.<lb/> Einstweilen freundliche Grüße und<lb/> Empfehlungen an Ihre
-                  <persName ref="personen.html#pers0006">Frau</persName><lb/>
+               <persName ref="personen.html#pers0003">Filetz</persName>, ich laße ihn bestens
+               grüßen, – auch die<lb/> übrigen in <placeName ref="orte.html#place0002"
+                  >Mühling</placeName> verbannten.<lb/> ich habe an Wochentagen von 8–3 respekt.
+               4h<lb/> dann Schluß, – Sonn u. Feiertage frei. –<lb/> es geht mir wirklich sehr gut.
+               – Ich arbeite für mich<lb/> täglich und bekomme lauter neue Käufer. –<lb/> Es wird
+               mit Hochdruck gearbeitet. – Die Zeichnung<lb/> von <persName
+                  ref="personen.html#pers0004">Höllriegl</persName> hängt bereits im <orgName
+                  ref="organisation.html#org0001">Grazer Museum</orgName>.<lb/> – Hier in der
+                  <orgName ref="organisation.html#org0002">Konsum-Anstalt</orgName> bekomme ich<lb/>
+               Zigaretten, Fett, Zucker, Kaffee u.s.w. auch trink<lb/> ich fleißig Probeschnäpse. –
+               ich sitze mit einem<lb/> netten <persName ref="personen.html#pers0005"
+                  >Fräulein</persName> allein in einen [sic!] Zimmer, – Auweh!<lb/> sonst geht es
+               hier ganz zivilistisch zu. – Das böseste<lb/> wird jetzt die Straßenbahn werden, –
+               kein<lb/> Verkehrsmittel für <placeName ref="orte.html#place0001">Wien</placeName>
+               ist bedenklich. –<lb/> Wenn Sie nach <placeName ref="orte.html#place0001"
+                  >Wien</placeName> kommen besuchen Sie mich<lb/> einmal, – schreiben Sie aber bitte
+               vorerst<lb/> damit ich daheim bin. – Wie der Krieg aus<lb/> ist, fahren wir nach
+                  <placeName ref="orte.html#place0004">Zürich</placeName>.<lb/> Einstweilen
+               freundliche Grüße und<lb/> Empfehlungen an Ihre <persName
+                  ref="personen.html#pers0006">Frau</persName><lb/>
             </p>
          </div>
          <closer>
