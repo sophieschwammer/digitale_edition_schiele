@@ -1,0 +1,53 @@
+body {
+    margin: 30px;
+    height: 100vh;
+
+
+    font-family: "Garamond", serif;
+
+    background-color: #E1C9AF;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-container h1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    }
+ .intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+
+.person-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.person-list li {
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.person-list .lifedata {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.person-list .occupation {
+    font-size: 0.95em;
+}
+
+.person-list .note {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.person-list .idno a {
+    font-size: 0.85em;
+}
