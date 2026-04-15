@@ -64,10 +64,11 @@
                <forename>Arthur</forename>
                <choice>
                   <abbr>A.R.</abbr>
-                  <expan>Arthur Roessler</expan>
+                  <expan>Arthur Roessler</expan> 
                </choice>
             </persName>
-            <birth when="1877-02-20">20. Februar 1877 <placeName ref="orte.xml#place0001"
+            <note>A.R. = Abkürzung im Text</note>
+            <birth when="1877-02-20">20. Februar 1877 <placeName ref="orte.html#place0001"
                   >Wien</placeName>
             </birth>
             <death when="1955-07-20">20. Juli 1955</death>
@@ -81,7 +82,7 @@
                <surname>Reichel</surname>
                <forename>Oskar</forename>
             </persName>
-            <birth when="1869-04-21">21. April 1869 <placeName ref="orte.xml#place0001"
+            <birth when="1869-04-21">21. April 1869 <placeName ref="orte.html#place0001"
                   >Wien</placeName>
             </birth>
             <death when="1943-05-07">7. Mai 1943</death>
@@ -95,7 +96,7 @@
                <surname>Reininghaus</surname>
                <forename>Carl</forename>
             </persName>
-            <birth when="1857-02-11">11. Februar 1857 <placeName ref="orte.xml#place0003"
+            <birth when="1857-02-11">11. Februar 1857 <placeName ref="orte.html#place0003"
                   >Graz</placeName>
             </birth>
             <death when="1929-10-29">29. Oktober 1929</death>

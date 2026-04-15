@@ -1,0 +1,65 @@
+body {
+    margin: 30px;
+    height: 100vh;
+
+
+    font-family: "Garamond", serif;
+
+    background-color: #E1C9AF;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-container h1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+.postcard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+}
+.postcard-back {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postcard-message {
+    width: 50%;
+}
+
+.address {
+    width: 45%;
+    border-left: 1px solid #999;
+    padding-left: 10px;
+}
+
+.stamp {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 10px;
+}
+
+.hu {
+    font-style: italic;
+}
+
+.translation {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.printed {
+    font-family: serif;
+    letter-spacing: 1px;
+}
+
+.allcaps {
+    text-transform: uppercase;
+}

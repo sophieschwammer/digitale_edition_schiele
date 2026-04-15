@@ -89,7 +89,7 @@
             <correspAction type="sent">
                <persName ref="personen.html#pers0001">Egon Schiele</persName>
                <placeName ref="orte.html#place0007">Győr</placeName>
-               <date when="1913-01-05">5. Januar 1913</date>
+               <date when="1913-01-13">13. Januar 1913</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="personen.html#pers0007">Arthur Roessler</persName>
@@ -97,7 +97,7 @@
                   <addrLine>Billrothstraße 6</addrLine>
                   <addrLine>1190 <placeName ref="orte.html#place0001">Wien</placeName></addrLine>
                </address>
-               <date notBefore="1913-01-05"/>
+               <date notBefore="1913-01-13"/>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -109,12 +109,12 @@
             <div type="front">
                <div type="printedText">
                   <p>
-                     <seg xml:lang="hu"> Üdvözlet Győrből </seg>
-                     <note>Grüße aus Győr</note>
+                     <seg xml:lang="hu">Üdvözlet Győrből</seg>
+                     <seg type="translation" xml:lang="de">Grüße aus Győr</seg>
                   </p>
                   <p>
                      <seg type="printed" xml:lang="hu"> Révfalu és Dunapart </seg>
-                     <note>Révfalu und Donauufer</note>
+                     <seg type="translation" xml:lang="de">Révfalu und Donauufer</seg>
                   </p>
                </div>
                <figure>
@@ -140,13 +140,16 @@
                   <note>Briefmarke und Poststempel vorhanden</note>
                </div>
                <div type="address" subtype="recipient" rend="allcaps">
-
-                  <p>
-                     <hi rend="allcaps">HERRN KUNSTSCHRIFT-<lb/> STELLER <persName
-                           ref="personen.html#pers0007">ARTHUR<lb/>RÖSSLER</persName>
-                        <lb/><placeName ref="orte.html#place0001">WIEN</placeName> XIX.
-                        <lb/>BILLROTHSTR. 6. </hi></p>
-
+                  <address>
+                     <addrLine>Herrn Kunstschriftsteller</addrLine>
+                     <addrLine>
+                        <persName ref="personen.html#pers0007">Arthur Rössler</persName>
+                     </addrLine>
+                     <addrLine>
+                        <placeName ref="orte.html#place0001">Wien</placeName> XIX.
+                     </addrLine>
+                     <addrLine>Billrothstr. 6</addrLine>
+                  </address>
                </div>
             </div>
          </div>

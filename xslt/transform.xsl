@@ -9,12 +9,12 @@
 
         <html>
             <head>
-                <title>Schiele Edition</title>
+                <title>Egon Entdecken</title>
                 <link rel="stylesheet" href="../css/style.css"/>
             </head>
 
             <body>
-                <h1>Schiele Edition</h1>
+                <h1>Egon Entdecken</h1>
 
                 <xsl:apply-templates/>
 
@@ -45,6 +45,75 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    
+    <xsl:template match="tei:listPerson">
+        <div class="person-list">
+            <h2>Personenverzeichnis</h2>
+            <ul>
+                <xsl:apply-templates/>
+            </ul>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:person">
+        <li id="{@xml:id}">
+            
+            <!-- Name -->
+            <strong>
+                <xsl:apply-templates select="tei:persName"/>
+            </strong>
+            
+            <!-- Lebensdaten -->
+            <xsl:if test="tei:birth or tei:death">
+                <div class="lifedata">
+                    <xsl:if test="tei:birth">
+                        * <xsl:value-of select="tei:birth/@when"/>
+                    </xsl:if>
+                    <xsl:if test="tei:death">
+                        – <xsl:value-of select="tei:death/@when"/>
+                    </xsl:if>
+                </div>
+            </xsl:if>
+            
+            <!-- Beruf -->
+            <xsl:if test="tei:occupation">
+                <div class="occupation">
+                    <xsl:for-each select="tei:occupation">
+                        <span><xsl:value-of select="."/></span>
+                        <xsl:if test="position() != last()">, </xsl:if>
+                    </xsl:for-each>
+                </div>
+            </xsl:if>
+            
+            <!-- Note -->
+            <xsl:if test="tei:note">
+                <div class="note">
+                    <xsl:value-of select="tei:note"/>
+                </div>
+            </xsl:if>
+            
+            <!-- GND -->
+            <xsl:if test="tei:idno">
+                <div class="idno">
+                    <a href="{tei:idno}" target="_blank">GND</a>
+                </div>
+            </xsl:if>
+            
+        </li>
+    </xsl:template>
+    
+    <xsl:template match="tei:persName">
+        <xsl:choose>
+            <xsl:when test="tei:surname and tei:forename">
+                <xsl:value-of select="tei:forename"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="tei:surname"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
     <!-- Orte -->
     <xsl:template match="tei:placeName">
@@ -60,6 +129,45 @@
                 </span>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:listPlace">
+        <div class="place-list">
+            <h2>Ortsverzeichnis</h2>
+            <ul>
+                <xsl:apply-templates/>
+            </ul>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:place">
+        <li id="{@xml:id}">
+            <strong>
+                <xsl:value-of select="tei:placeName[@type='main'] | tei:placeName[1]"/>
+            </strong>
+            
+            <xsl:if test="tei:country">
+                <span class="country">
+                    (<xsl:value-of select="tei:country"/>)
+                </span>
+            </xsl:if>
+            
+            <xsl:if test="tei:location/tei:geo">
+                <div class="geo">
+                    Koordinaten: <xsl:value-of select="tei:location/tei:geo"/>
+                </div>
+            </xsl:if>
+            
+            <xsl:if test="tei:idno">
+                <div class="idno">
+                    <a href="{tei:idno}" target="_blank">GND</a>
+                </div>
+            </xsl:if>
+        </li>
+    </xsl:template>
+    
+    <xsl:template match="text()">
+        <xsl:value-of select="."/>
     </xsl:template>
 
     <!-- Organisationen -->
@@ -77,6 +185,56 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
+    <xsl:template match="tei:listOrg">
+        <div class="org-list">
+            <h2>Organisationsverzeichnis</h2>
+            <xsl:apply-templates select="tei:org"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:org">
+        <div class="org-entry" id="{@xml:id}">
+            
+            <!-- Name -->
+            <h3>
+                <xsl:apply-templates select="tei:orgName"/>
+            </h3>
+            
+            <!-- Ort -->
+            <xsl:if test="tei:settlement">
+                <p class="place">
+                    Ort: 
+                    <xsl:apply-templates select="tei:settlement"/>
+                </p>
+            </xsl:if>
+            
+            <!-- Beschreibung -->
+            <xsl:if test="tei:note">
+                <p class="note">
+                    <xsl:value-of select="tei:note"/>
+                </p>
+            </xsl:if>
+            
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:settlement">
+        <xsl:choose>
+            <xsl:when test="@ref">
+                <a href="{@ref}" class="place">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="place">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+
 
     <!-- Werke -->
     <xsl:template match="tei:objectName">
@@ -264,5 +422,85 @@
         <span class="printed">
             <xsl:apply-templates/>
         </span>
+    </xsl:template>
+    
+    <!-- Postkarte -->
+    <xsl:template match="tei:div[@type='postcard']">
+        <div class="postcard">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='front']">
+        <div class="postcard-front">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='back']">
+        <div class="postcard-back">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='message']">
+        <div class="postcard-message">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:address">
+        <div class="address">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:addrLine">
+        <div>
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='stamp']">
+        <div class="stamp">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend='allcaps framed']">
+        <span class="allcaps-framed">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <!-- Postkarte Roessler -->
+    <xsl:template match="tei:seg[@xml:lang='hu']">
+        <span class="hu">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type='translation']">
+        <span class="translation">
+            (<xsl:apply-templates/>)
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@type='printed']">
+        <span class="printed">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:address">
+        <div class="address">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:addrLine">
+        <div>
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
 </xsl:stylesheet>

@@ -23,32 +23,26 @@ body {
     text-align: center;
     }
 
-.place-list {
+
+.org-list {
+    max-width: 800px;
     margin: 2em 0;
 }
 
-.place-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.place-list li {
-    margin-bottom: 1em;
-    padding: 0.5em;
+.org-entry {
     border-bottom: 1px solid #ccc;
+    padding: 10px 0;
 }
 
-.place-list .country {
+.org-entry h3 {
+    margin-bottom: 5px;
+}
+
+.place {
+    color: darkgreen;
+}
+
+.note {
+    font-size: 0.9em;
     color: gray;
-    margin-left: 0.5em;
-}
-
-.place-list .geo {
-    font-size: 0.9em;
-    color: #555;
-}
-
-.place-list .idno a {
-    font-size: 0.9em;
-    text-decoration: none;
 }

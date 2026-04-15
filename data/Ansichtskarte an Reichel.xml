@@ -71,7 +71,7 @@
                <history>
                   <origin>
                      <origPlace>Krumau</origPlace>
-                     <origDate notBefore="1910" notAfter="1913"/>
+                     <origDate notBefore="1910-10-15"/>
                   </origin>
                </history>
                
@@ -134,7 +134,7 @@
                   <address>
                      <addrLine>Herrn</addrLine>
                      <addrLine>Dr. <persName ref="personen.html#pers0008"
-                           >Oskar<lb/>Reichel</persName></addrLine>
+                           >Oskar Reichel</persName></addrLine>
                      <addrLine><placeName ref="orte.html#place0001">Wien</placeName> XIX.
                         <lb/>Chimanistraße 11.</addrLine>
                   </address>
